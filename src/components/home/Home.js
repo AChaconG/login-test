@@ -1,5 +1,7 @@
 import './Home.css';
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 
 
@@ -7,8 +9,12 @@ import React from 'react';
 function Home() {
   return (
       <div>
-        <a className='button1' href='https://developer.mozilla.org/es/'>layout</a>
-        <a className='button2' href='https://developer.mozilla.org/es/'>login</a>
+        <Link to='/layout'>
+            <a className='button1'>layout</a>
+        </Link>
+        <Link to='/login'>
+            <a className='button2'>login</a>
+        </Link>
       </div>
   );
 }

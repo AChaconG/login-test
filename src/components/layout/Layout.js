@@ -1,11 +1,15 @@
 import './Layout.css';
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 
 
 function Layout() {
   return (
     <div>
-      <a className='button' href='https://developer.mozilla.org/es/'>Botón</a>
+        <Link to='/layout/menu'> 
+            <a className='button'>Go to Menu</a>
+        </Link> 
     </div>
   );
 }
