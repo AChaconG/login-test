@@ -1,4 +1,6 @@
 import './Layout.css';
+import React from 'react';
+
 
 function Layout() {
   return (
@@ -8,4 +10,4 @@ function Layout() {
   );
 }
 
-export default App;
+export default Layout;

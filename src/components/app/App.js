@@ -1,11 +1,21 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Home from '../home/Home';
+import Layout from '../layout/Layout';
+import Login from '../login/Login';
+
+
 
 function App() {
   return (
-    <div>
-      <a className='button1' href='https://developer.mozilla.org/es/'>layout</a>
-      <a className='button2' href='https://developer.mozilla.org/es/'>login</a>
-    </div>
+    <Router>
+      <div>
+        <Home/> 
+        <Route path='/layout' component={Layout}/>
+        <Route path='/login' component={Login} />
+      </div>
+    </Router>
   );
 }
 
