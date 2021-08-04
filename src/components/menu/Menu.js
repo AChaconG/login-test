@@ -1,34 +1,27 @@
 import './Menu.css';
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import React, { useState } from 'react';
+//import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 
 export function Menu() {
+    const [section, setSection] = useState(null)
+
     return (
-        <div class='sidenav'>
-            <Link to='/layout/menu/section1'>
-                <a>Section 1</a>
-            </Link>
-            <Link to='/layout/menu/section2'>
-                <a>Section 2</a>
-            </Link>
+        <div>
+            <div className='main'> 
+                <h1 className='main'>{section}</h1>
+            </div>
+            <div className='sidenav'>
+                    <a onClick={() => setSection('Section 1')} >Section 1</a>
+                    <a onClick={() => setSection('Section 2')} >Section 2</a>
+            </div>
+            
         </div>
     );
   }
 
 
-export function Section1() {
-    return (
-    <div>
-    <h2>Section 1</h2>
-    <a href='https://duckduckgo.com/?q=export+react&atb=v261-1&ia=web'>link</a>
-    </div>
-    )
-  }
-  
-export function Section2() {
-    return <h2>Section 2</h2>;
-}
+
 
   
   

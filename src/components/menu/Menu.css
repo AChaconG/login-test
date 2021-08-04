@@ -1,9 +1,17 @@
+
+.h2 {
+    color: black;
+    text-align: right;
+    z-index: 1;
+    font-size: 100px;
+    margin: 50px 50px; 
+}
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
+    /* z-index: 1; Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: rgb(78, 74, 74); 
@@ -31,9 +39,6 @@
     padding: 0px 10px;
   }
 
-.h2 {
-    color: black;
-    text-align: right;
-}
+
   
  
