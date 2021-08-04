@@ -14,14 +14,16 @@ function App() {
   return (
     <Router>
       <div>
-        <Switch>
+      
+        {/* <Switch> */}
           <Route path='/' exact component={Home}/> 
-          <Route path='/layout' exact component={Layout}/>
-          <Route path='/layout/menu' component={Menu} />
-          <Route path='/layout/menu/section1' component={Section1} />
-          <Route path='/layout/menu/section2' component={Section2} />
           <Route path='/login' component={Login} />
-        </Switch>
+          <Route path='/layout' exact  component={Layout}/>
+
+        {/* </Switch> */}
+        <Route path='/layout/menu/' component={Menu} />
+        <Route path='/layout/menu/section1' component={Section1} />
+        <Route path='/layout/menu/section2' component={Section2} />
       </div>
     </Router>
   );
